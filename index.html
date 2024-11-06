@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collecting Thanksgiving Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Collecting Thanksgiving Recipes</h1>
+
+    <form id="recipeForm">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Today's date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="recipeName" required>
+
+        <label>What ingredients are in your recipe?</label>
+        <div>
+            <input type="checkbox" id="fruit" name="ingredients" value="Fruit">
+            <label for="fruit">Fruit</label>
+            <input type="checkbox" id="vegetables" name="ingredients" value="Vegetables">
+            <label for="vegetables">Vegetables</label>
+            <input type="checkbox" id="grains" name="ingredients" value="Grains">
+            <label for="grains">Grains</label>
+            <input type="checkbox" id="dairy" name="ingredients" value="Dairy">
+            <label for="dairy">Dairy</label>
+        </div>
+
+        <label for="recipeType">What type of recipe is this?</label>
+        <select id="recipeType" name="recipeType" required>
+            <option value="Dessert">Dessert</option>
+            <option value="Main Course">Main Course</option>
+            <option value="Side Dish">Side Dish</option>
+            <option value="Appetizer">Appetizer</option>   
+
+        </select>
+
+        <button type="submit">Send Your Recipe To Us</button>
+    </form>
+
+</body>
+</html>
